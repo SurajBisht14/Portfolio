@@ -1,0 +1,20 @@
+#themeDiv{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    visibility: hidden;
+}
+#toogleBall{
+    background-image: url('../images/sun.svg');
+    background-position: center;
+    background-size: cover;
+}
+#themeDiv:checked +  label #toogleBall{
+    transform: translateX(27px);
+    background-image: url('../images/moon.svg');
+    border-color: transparent;
+}
+#themeDiv:checked + label{
+    background-color: rgba(0,0,0,1);
+    border-color: white;
+}

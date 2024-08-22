@@ -1,0 +1,34 @@
+#imageBox{
+    background-color: rgba(12,192,223);
+}
+
+#imageBox::after{
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    background-color:rgba(12,192,223,1);
+    filter: blur(5px);
+    z-index: -1;
+    animation: spreadBlur 2s linear infinite;
+    transition: filter 1s linear ;
+}
+
+@media screen and (max-width:1024px) {
+    #imageBox::after{
+        height: 280px;
+        width: 280px;
+    }
+}
+@keyframes spreadBlur {
+    0%{
+        filter: blur(5px);
+    }
+    50%{
+        filter: blur(8px);
+    }
+    100%{
+        filter: blur(5px);
+    }
+}

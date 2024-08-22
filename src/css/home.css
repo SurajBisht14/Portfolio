@@ -1,0 +1,12 @@
+#mainHomeDiv::-webkit-scrollbar{
+    width:5px;  
+}
+#mainHomeDiv::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+#mainHomeDiv::-webkit-scrollbar-thumb{
+    background-color: #0cc0df;
+    border-radius: 5px;
+} 
+
+
